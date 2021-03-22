@@ -1,0 +1,32 @@
+include ../variables/variable_footer.pug
+    include ../base/mixin.pug
+    .footer__top 
+        .footer__top-contact
+            h1 Kênh thông tin của chúng tôi
+            .contact__icon 
+                each item in icon 
+                    !=item
+        h1  Đăng kí nhận khuyến mãi từ chúng tôi
+        .footer__top-email
+            input(type="text" placeholder="Nhập email...")
+            <i class="fas fa-paper-plane"></i>
+    .footer__center 
+        .info__left 
+            h1 Green Shop
+            h2 Món quà từ thiên nhiên
+            p= intro
+            .contact 
+                .contact__mobile
+                    <i class="fas fa-mobile-alt"></i>Điện thoại: (84-4) 66.558.868
+                .contact__email 
+                    <i class="fas fa-envelope"></i>Email: info@dkt.com.vn
+        .info__right
+            each item in total_list 
+                +footer(item)
+    .footer__bottom 
+        ul 
+            each item in footer__bottom_left 
+                li= item 
+        ul 
+            each item in footer__bottom_right 
+                li!= item

@@ -16,3 +16,8 @@
   font-weight: 400;
   color: black;
 }
+@mixin size-color-text-footer(){
+    font-size: $text-size-min;
+    color: $color-text-white;
+    opacity: .6;
+}
