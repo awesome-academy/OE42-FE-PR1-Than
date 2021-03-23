@@ -8,8 +8,7 @@ html {
   scroll-behavior: smooth; }
 
 .footer {
-  background-color: #3b3434;
-  margin-top: 10rem; }
+  background-color: #3b3434; }
 
 .footer__top {
   padding: 1rem 0;
@@ -261,3 +260,172 @@ html {
               text-transform: uppercase; }
             .header .header__bottom .bottom__menu-list ul li:hover {
               background-color: #85a357; }
+
+.slide {
+  width: 100%; }
+  .slide img {
+    width: 100%; }
+
+.content_home {
+  margin-top: 2rem; }
+
+.title {
+  width: 100%;
+  font-size: 1.4rem;
+  color: #3aca3a;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(58, 202, 58, 0.6); }
+
+.cardver {
+  width: 100%;
+  height: 100%; }
+  .cardver__img {
+    width: 100%;
+    height: 60%;
+    position: relative; }
+    .cardver__img img {
+      width: 100%;
+      height: 100%; }
+    .cardver__img .product__new, .cardver__img .product__discount, .cardver__img .cardver__buy {
+      position: absolute; }
+    .cardver__img .product__new, .cardver__img .product__discount {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background-color: #3aca3a;
+      top: 1rem;
+      left: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .cardver__img .product__new h1, .cardver__img .product__discount h1 {
+        font-size: 1rem;
+        color: #fff; }
+    .cardver__img:hover > .cardver__buy {
+      bottom: 40%;
+      opacity: 1; }
+    .cardver__img .product__discount {
+      background-color: red; }
+      .cardver__img .product__discount h1 {
+        margin: 0; }
+    .cardver__img .cardver__buy {
+      width: 10rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      bottom: 0;
+      opacity: 0;
+      left: calc(50% - 5rem);
+      transition: all 1s ease; }
+      .cardver__img .cardver__buy button {
+        border-radius: 25px;
+        background-color: #3aca3a;
+        color: #fff;
+        border: none;
+        padding: .4rem 1rem; }
+      .cardver__img .cardver__buy-icon {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .cardver__img .cardver__buy-icon icon {
+          color: black;
+          font-size: 1rem; }
+  .cardver__content {
+    margin-top: 1rem;
+    text-align: center; }
+    .cardver__content h1 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem; }
+    .cardver__content .rating {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: yellow; }
+      .cardver__content .rating icon {
+        margin-right: .4rem; }
+    .cardver__content .price {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .cardver__content .price h2 {
+        font-size: 1rem;
+        color: red;
+        margin-right: .6rem; }
+      .cardver__content .price h3 {
+        font-size: 1rem;
+        color: black;
+        opacity: .6;
+        text-decoration-line: line-through; }
+
+.cardhor {
+  padding: .4rem 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .cardhor__img {
+    width: 30%;
+    height: 100%; }
+    .cardhor__img img {
+      width: 100%;
+      height: 100%; }
+  .cardhor__content {
+    margin-left: 1rem;
+    text-align: left; }
+    .cardhor__content h1 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem; }
+    .cardhor__content .rating {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: yellow; }
+      .cardhor__content .rating icon {
+        margin-right: .4rem; }
+    .cardhor__content .price h2 {
+      font-size: 1rem;
+      color: red; }
+
+.banner {
+  width: 100%; }
+  .banner img {
+    width: 100%; }
+
+.cardnews {
+  width: 100%;
+  height: 100%; }
+  .cardnews__img {
+    width: 100%;
+    height: 40%; }
+    .cardnews__img img {
+      width: 100%;
+      height: 100%; }
+  .cardnews__content {
+    margin-top: 1rem;
+    text-align: left; }
+    .cardnews__content h1 {
+      font-size: 1.4rem;
+      color: #3aca3a;
+      margin-bottom: 1rem; }
+    .cardnews__content h4 {
+      font-size: 1rem;
+      opacity: .6;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 1rem; }
+    .cardnews__content p {
+      text-align: justify;
+      opacity: .8;
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 1rem; }
+    .cardnews__content a {
+      text-decoration: none;
+      font-size: 1rem;
+      color: #3aca3a;
+      margin-bottom: 1rem; }

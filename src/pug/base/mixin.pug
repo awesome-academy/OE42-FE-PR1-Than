@@ -1,3 +1,4 @@
+include ../variables/variable_index.pug
 mixin footer(data)
     .footer__list
         h1= data[0]
@@ -6,3 +7,51 @@ mixin footer(data)
                 li
                     <i class="fas fa-chevron-right"></i>
                     = data[i]
+mixin card_vertical(img,title,pricedecrease,price,discount)
+    .cardver
+        .cardver__img
+            img(src=`/OE42-FE-PR1-Than/assets/img/${img}`, alt="Anh hoa", srcset="")
+            if discount == 'new'
+                .product__new
+                    h1 new 
+            else
+                .product__discount 
+                    h1 50%
+            .cardver__buy 
+                button Mua ngay 
+                .cardver__buy-icon 
+                    !=icon_search 
+        .cardver__content 
+            h1= title 
+            .rating 
+                -for(let i=0;i<4;i++)
+                    !=icon_star 
+                !=icon_halfstar
+            .price 
+                h2 #{pricedecrease}đ
+                h3 #{price}đ
+mixin card_hor(img,title,pricedecrease)
+    .cardhor
+        .cardhor__img
+            img(src=`/OE42-FE-PR1-Than/assets/img/${img}`, alt="Anh hoa", srcset="")
+        .cardhor__content 
+            h1= title 
+            .rating 
+                -for(let i=0;i<4;i++)
+                    !=icon_star 
+                !=icon_halfstar
+            .price 
+                h2 #{pricedecrease}đ
+mixin card_news(img,title,desc)
+    .cardnews
+        .cardnews__img
+            img(src=`/OE42-FE-PR1-Than/assets/img/${img}`, alt="Anh hoa", srcset="")
+        .cardnews__content 
+            h4 Thứ 7,ngày 31 tháng 12 năm 2015
+            h1= title 
+            p= desc
+            a(href="") Đọc tiếp 
+               
+
+
+
