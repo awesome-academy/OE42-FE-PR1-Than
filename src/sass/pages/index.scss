@@ -1,0 +1,182 @@
+.slide{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+.content_home{
+    margin-top: 2rem;
+}
+.title{
+    width: 100%;
+    font-size: $text-size-normal;
+    color: $color-main-green;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba($color: $color-main-green, $alpha: .6);   
+}
+.cardver{
+    width: 100%;
+    height: 100%;
+    &__img{
+        @include w-h(100%,60%);
+        position: relative;
+        img{
+            @include w-h(100%,100%);
+        }
+        .product__new,.product__discount,.cardver__buy{
+        position: absolute;
+        }
+        .product__new,.product__discount{
+            @include w-h(2.5rem,2.5rem);
+            border-radius: 50%;
+            background-color: $color-main-green;
+            top: 1rem;
+            left: 1rem;
+            @include displayFlex(center,center);
+            h1{
+                font-size: $text-size-min;
+                color: $color-text-white;
+            }
+        }
+        &:hover > .cardver__buy {
+            bottom: 40%;
+            opacity: 1;
+        }
+        .product__discount{
+            background-color: red;
+            h1{
+                margin: 0;
+            }
+        }
+        .cardver__buy{
+            width: 10rem;
+            @include displayFlex(space-between,center);
+            bottom: 0;
+            opacity: 0;
+            left: calc(50% - 5rem);
+            transition: all 1s ease;
+            button{
+                border-radius: 25px;
+                background-color: $color-main-green;
+                color: $color-text-white;
+                border: none;
+                padding: .4rem 1rem;
+            }
+            &-icon{
+                @include w-h(2rem,2rem);
+                border-radius: 50%;
+                background-color:$color-text-white;
+                @include displayFlex(center,center);
+                icon{
+                    color: black;
+                    font-size: $text-size-min;
+                }
+            }
+        }
+    }
+    &__content{
+        margin-top: 1rem;
+        text-align: center;
+        h1{
+            font-size: $text-size-normal;
+            margin-bottom: 1rem;
+        }
+        .rating{
+            font-size: $text-size-min;
+            margin-bottom: 1rem;
+
+            color: yellow;
+            icon{
+                margin-right: .4rem;
+            }
+        }
+        .price {
+            @include displayFlex(center,center);
+            h2{
+                font-size: $text-size-min;
+                color: red;
+                margin-right: .6rem;
+            }
+            h3{
+                font-size: $text-size-min;
+                color: black;
+                opacity: .6;
+                text-decoration-line: line-through;
+            }
+        }
+    }
+}
+.cardhor{
+    padding: .4rem 0;
+    width: 100%;
+    height: 100%;
+    @include displayFlex(flex-start,center);
+    &__img{
+        @include w-h(30%,100%);
+        img{
+            @include w-h(100%,100%);
+        }
+    }
+    &__content{
+        margin-left: 1rem;
+        text-align: left;
+        h1{
+            font-size: $text-size-normal;
+            margin-bottom: 1rem;
+        }
+        .rating{
+            font-size: $text-size-min;
+            margin-bottom: 1rem;
+
+            color: yellow;
+            icon{
+                margin-right: .4rem;
+            }
+        }
+        .price {
+            h2{
+                font-size: $text-size-min;
+                color: red;
+            }
+        }
+    }
+}
+.banner {
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+.cardnews{
+    width: 100%;
+    height: 100%;
+    &__img{
+        @include w-h(100%,40%);
+        img{
+            @include w-h(100%,100%);
+        }
+    }
+    &__content{
+        margin-top: 1rem;
+        text-align: left;
+        h1{
+            @include size-color-text-news($text-size-normal,$color-main-green)
+        }
+        h4{
+            font-size: $text-size-min;
+            opacity: .6;
+            margin-bottom: 1rem;
+            @include size-color-text-news($text-size-min,#333) 
+        }
+        p{
+            text-align: justify;
+            opacity: .8;
+            @include size-color-text-news($text-size-min,#333)
+        }
+        a{
+            text-decoration: none;
+            @include size-color-text-news($text-size-min,$color-main-green)
+        }
+    }
+}

@@ -21,3 +21,8 @@
     color: $color-text-white;
     opacity: .6;
 }
+@mixin size-color-text-news($fonsize,$color){
+    font-size: $fonsize;
+    color: $color;
+    margin-bottom: 1rem;
+}

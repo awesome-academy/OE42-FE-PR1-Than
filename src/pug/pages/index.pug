@@ -1,2 +1,63 @@
 extends ../layouts/layout_home.pug
 block content
+    include ../variables/variable_index.pug
+        include ../base/mixin.pug
+        .slide 
+            img(src= img_head, alt="", srcset="")
+        .container
+            .content_home  
+                .row 
+                    h1.title Sản phẩm nổi bật
+                    .col-12.col-sm-12.col-lg-6
+                        .row 
+                            +card_vertical(img_content_head[0],title_content_head[0],priceDecrease_content_head[0],price_content_head,'new')
+                            .col-6.col-sm-6
+                                +card_vertical(img_content_head[1],title_content_head[1],priceDecrease_content_head[1],price_content_head,'new')
+                            .col-6.col-sm-6
+                                +card_vertical(img_content_head[2],title_content_head[2],priceDecrease_content_head[2],price_content_head,'new')
+                    .col-12.col-sm-12.col-lg-6
+                        .row 
+                            .col-6.col-sm-6
+                                +card_vertical(img_content_head[3],title_content_head[3],priceDecrease_content_head[3],price_content_head)
+                            .col-6.col-sm-6
+                                +card_vertical(img_content_head[4],title_content_head[4],priceDecrease_content_head[4],price_content_head,'new')
+                            +card_vertical(img_content_head[5],title_content_head[5],priceDecrease_content_head[5],price_content_head,'new')
+            .content_home
+                .row 
+                    .col-0.col-sm-0.col-md-4
+                        h1.title Sản phẩm mua nhiều
+                        -for(let i = 0 ; i <img_content_head.length;i++)
+                            .row
+                                +card_hor(img_content_head[i],title_content_head[i],priceDecrease_content_head[i])
+                    .col-12.col-sm-12.col-md-8
+                        h1.title Sản phẩm khuyến mãi
+                        .row   
+                            -for(let i = 0 ; i < img_content_head.length/2;i++)
+                                .col-4.col-sm-4
+                                    +card_vertical(img_content_head[i],title_content_head[i],priceDecrease_content_head[i],price_content_head,'new')
+                        .row   
+                            -for(let i = img_content_head.length/2 ; i < img_content_head.length;i++)
+                                .col-4.col-sm-4
+                                    +card_vertical(img_content_head[i],title_content_head[i],priceDecrease_content_head[i],price_content_head,'new')
+            .content_home
+                .banner 
+                    img(src= banner, alt="", srcset="")
+
+            .content_home
+                .row
+                    .col-12.col-sm-12
+                        h1.title Sản phẩm mới
+                        .row   
+                            -for(let i = 0 ; i < img_content_bottom.length/2;i++)
+                                .col-3.col-sm-3
+                                    +card_vertical(img_content_bottom[i],title_content_bottom[i],priceDecrease_content_bottom[i],price_content_bottom,'new')
+                        .row   
+                            -for(let i = img_content_bottom.length/2 ; i < img_content_bottom.length;i++)
+                                .col-3.col-sm-3
+                                    +card_vertical(img_content_bottom[i],title_content_bottom[i],priceDecrease_content_bottom[i],price_content_bottom,'new')
+            .content_home
+                .row 
+                    h1.title Tin mới
+                    -for(let i = 0 ; i< img_news.length ; i ++)
+                        .col-4.col-sm-4
+                            +card_news(img_news[i],title_news[i],desc_news[i])
