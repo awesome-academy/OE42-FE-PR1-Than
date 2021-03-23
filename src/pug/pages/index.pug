@@ -2,7 +2,25 @@ extends ../layouts/layout_home.pug
 block content
     include ../variables/variable_index.pug
         include ../base/mixin.pug
-        .slide 
+        input(type="checkbox", name="" ,id="popup" hidden )
+        label(for="popup").overlay
+        .popup 
+            label(for="popup").popup__close 
+                !=icon_popup
+            .popup__left 
+                img(src= img_popup, alt="", srcset="")
+            .popup__right
+                h1 Đăng kí nhận khuyến mãi từ chúng tôi
+                h2 Đăng kí email ngay hôm nay
+                .footer__top-email
+                    input(type="text" placeholder="Nhập email...")
+                    <i class="fas fa-paper-plane"></i>
+                p= desc_popup 
+                .popupcheck 
+                    input(type="checkbox", name="" id="popup-never")
+                    p Không hiển thị thông báo này nữa
+                
+        .slide
             img(src= img_head, alt="", srcset="")
         .container
             .content_home  
