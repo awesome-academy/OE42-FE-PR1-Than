@@ -26,7 +26,7 @@
             </ul>
             <ul>
               <li><a href="">
-                   <i class="fas fa-user-edit"></i>Đăng kí</a></li>
+                   <i class="fas fa-user-edit" data-bs-target="popupmodal"></i>Đăng kí</a></li>
               <li><a href=""><i class="fas fa-user"></i>Đăng nhập</a></li>
             </ul>
           </div>
@@ -72,7 +72,26 @@
         </div>
       </header>
       <section class="content">
-        <div class="slide"> <img src="/OE42-FE-PR1-Than/assets/img/slide.png" alt="" srcset=""></div>
+        <input type="checkbox" name="" id="popup" hidden>
+        <label class="overlay" for="popup"></label>
+        <div class="popup"> 
+          <label class="popup__close" for="popup"> <i class="fas fa-times"></i>
+          </label>
+          <div class="popup__left"> <img src="/OE42-FE-PR1-Than/assets/img/popupimg.jpg" alt="" srcset=""></div>
+          <div class="popup__right">
+            <h1>Đăng kí nhận khuyến mãi từ chúng tôi</h1>
+            <h2>Đăng kí email ngay hôm nay</h2>
+            <div class="footer__top-email">
+              <input type="text" placeholder="Nhập email..."><i class="fas fa-paper-plane"></i>
+            </div>
+            <p>Đăng kí email ngay hôm nay để nhận các tin về sự kiện và các chương trình giảm giá từ chúng tôi</p>
+            <div class="popupcheck"> 
+              <input type="checkbox" name="" id="popup-never">
+              <p>Không hiển thị thông báo này nữa</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide"><img src="/OE42-FE-PR1-Than/assets/img/slide.png" alt="" srcset=""></div>
         <div class="container">
           <div class="content_home"> 
             <div class="row"> 
