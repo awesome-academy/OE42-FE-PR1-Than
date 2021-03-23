@@ -1,0 +1,8 @@
+mixin footer(data)
+    .footer__list
+        h1= data[0]
+        ul 
+            -for(let i=1 ; i<data.length ; i++)
+                li
+                    <i class="fas fa-chevron-right"></i>
+                    = data[i]

@@ -115,7 +115,7 @@
         }
     }
     .header__bottom{
-        background-color: rgb(58, 202, 58);
+        background-color: $color-main-green;
         @include w-h(100%,3rem);
         .bottom__menu {
             height: 100%;
