@@ -303,6 +303,60 @@ html {
       font-size: 1rem;
       margin: 0; }
 
+.category__right {
+  width: 100%; }
+  .category__right .category__top {
+    margin-bottom: 2rem; }
+    .category__right .category__top .category__banner {
+      width: 100%; }
+      .category__right .category__top .category__banner img {
+        width: 100%; }
+  .category__right .category__filter {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .category__right .category__filter .filter__left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .category__right .category__filter .filter__left i {
+        font-size: 1.4rem;
+        margin-right: .4rem; }
+        .category__right .category__filter .filter__left i:nth-child(1) {
+          color: #3aca3a; }
+    .category__right .category__filter .filter__right {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .category__right .category__filter .filter__right .arrange h1, .category__right .category__filter .filter__right .show__product h1 {
+        font-size: 1rem;
+        margin: 0; }
+      .category__right .category__filter .filter__right .arrange .dropdown, .category__right .category__filter .filter__right .show__product .dropdown {
+        margin-left: .5rem; }
+        .category__right .category__filter .filter__right .arrange .dropdown a, .category__right .category__filter .filter__right .show__product .dropdown a {
+          min-width: 5rem; }
+      .category__right .category__filter .filter__right .arrange {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 1rem; }
+      .category__right .category__filter .filter__right .show__product {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+  .category__right .category__bottom {
+    margin-top: 2rem; }
+    .category__right .category__bottom .category__pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .category__right .category__bottom .category__pagination .page-link {
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 0.8); }
+  .category__right .category__middle {
+    width: 100%; }
+
 .slide {
   width: 100%; }
   .slide img {

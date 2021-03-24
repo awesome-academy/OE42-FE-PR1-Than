@@ -1,0 +1,8 @@
+extends ../layouts/layout_category.pug
+block category
+    include ../variables/variable_index.pug
+        include ../base/mixin.pug
+        .row 
+            -for(let i = 0 ; i < img_content_bottom.length;i++)
+                .col-6.col-sm-4
+                    +card_vertical(img_content_bottom[i],title_content_bottom[i],priceDecrease_content_bottom[i],price_content_bottom,'new')

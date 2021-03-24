@@ -1,6 +1,29 @@
 include ../variables/variable_category.pug
-    include ../base/mixin.pug
-    .category__left
-        +category(category_product)
-        +category(category_filter)
-        +category_color(category_color,color)
+    include ../variables/variable_index.pug
+        include ../base/mixin.pug
+        .container
+            .row.content__category
+                .col-0.col-sm-0.col-lg-3
+                    .category__left
+                        +category(category_product)
+                        +category(category_filter)
+                        +category_color(category_color,color)
+                .col-12.col-sm-12.col-md-9
+                    .category__right 
+                        .category__top 
+                            .category__banner 
+                                img(src= banner, alt="", srcset="")
+                            .category__filter 
+                                .filter__left 
+                                    <i class="fas fa-th"></i>
+                                    <i class="fas fa-bars"></i>
+                                .filter__right
+                                    .arrange
+                                        +category_filter('Tên sản phẩm',filter_nameproduct)
+                                    .show__product
+                                        +category_filter('Show',filter_number)  
+                        .category__middle        
+                            block category 
+                        .category__bottom
+                            .category__pagination
+                                +pagination
