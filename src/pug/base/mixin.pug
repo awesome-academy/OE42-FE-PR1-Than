@@ -51,7 +51,17 @@ mixin card_news(img,title,desc)
             h1= title 
             p= desc
             a(href="") Đọc tiếp 
-               
-
-
-
+mixin category(title)
+    h1.title__category= title[0]
+    ul 
+        -for(let i =1; i < title.length; i++) 
+            li 
+                a(href="")
+                    <i class="fas fa-chevron-right"></i>
+                    = title[i] 
+mixin category_color(colortext,color)
+    h1.title__category= colortext[0]
+    -for(let i=1;i<colortext.length;i++)
+        .category__color 
+            .color(style={background:color[i]})
+            h1.color__title= colortext[i]
