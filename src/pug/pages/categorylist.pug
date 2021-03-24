@@ -1,0 +1,9 @@
+extends ../layouts/layout_category.pug
+block category
+    include ../variables/variable_index.pug
+        include ../variables/variable_category.pug
+            include ../base/mixin.pug
+            -for(let i=0;i<img_content_bottom.length;i++)
+                .row.category__list
+                    .col-12.col-sm-12
+                        +card_list(img_content_bottom[i],title_content_bottom[i],priceDecrease_content_bottom[i],description_list_category)

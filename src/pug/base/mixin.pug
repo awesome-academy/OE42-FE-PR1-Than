@@ -86,3 +86,21 @@ mixin pagination
         <li class="page-item"><a class="page-link" href="#">Tiếp theo</a></li>
     </ul>
     </nav>
+mixin card_list(img,title,pricedecrease,desc)
+    .cardhor.cardlist
+        .cardhor__img.cardlist__img
+            img(src=`/OE42-FE-PR1-Than/assets/img/${img}`, alt="Anh hoa", srcset="")
+        .cardhor__content.cardlist__content
+            h1= title 
+            .rating 
+                -for(let i=0;i<4;i++)
+                    !=icon_star 
+                !=icon_halfstar
+            .list__description
+                p= desc
+            .price 
+                h2 #{pricedecrease}đ
+            .cardlist__buy 
+                button Mua ngay 
+                .cardlist__buy-icon 
+                    !=icon_search 
