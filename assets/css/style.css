@@ -588,3 +588,43 @@ html {
 
 #popup:checked ~ .popup {
   display: none; }
+
+.category__list {
+  margin-bottom: 2rem; }
+
+.cardlist {
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); }
+  .cardlist__img {
+    width: 40%; }
+  .cardlist__content {
+    padding: 1rem 0; }
+    .cardlist__content .list__description {
+      opacity: .8;
+      text-align: justify;
+      font-size: 1rem; }
+    .cardlist__content .cardlist__buy {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 10rem;
+      margin-top: 1rem; }
+      .cardlist__content .cardlist__buy button {
+        border-radius: 25px;
+        background-color: #3aca3a;
+        color: #fff;
+        border: none;
+        padding: .4rem 1rem; }
+      .cardlist__content .cardlist__buy .cardlist__buy-icon {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .cardlist__content .cardlist__buy .cardlist__buy-icon icon {
+          color: black;
+          font-size: 1rem; }
