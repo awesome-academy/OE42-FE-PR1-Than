@@ -65,3 +65,24 @@ mixin category_color(colortext,color)
         .category__color 
             .color(style={background:color[i]})
             h1.color__title= colortext[i]
+mixin category_filter(title,data)
+    h1 Sắp xếp theo 
+    <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown= title
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            each item in data 
+                <li><a class="dropdown-item" href="#">#{item}</a></li>
+        </ul>
+    </div>
+mixin pagination 
+    <nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Trước</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Tiếp theo</a></li>
+    </ul>
+    </nav>

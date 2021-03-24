@@ -44,3 +44,65 @@
         }
     }
 }
+.category__right{
+    width: 100%;
+    .category__top{
+        margin-bottom: 2rem;
+        .category__banner{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .category__filter{
+        margin-top: 2rem;
+        @include displayFlex(space-between,center);
+        .filter__left{
+            @include displayFlex( flex-start,center);
+            i{
+                font-size: $text-size-normal;
+                margin-right: .4rem;
+                &:nth-child(1){
+                    color: $color-main-green
+                }
+            }  
+        }
+        .filter__right{
+            @include displayFlex( flex-start,center);
+            .arrange,.show__product{
+                h1{
+                    font-size: $text-size-min;
+                    margin: 0;
+                }
+                .dropdown{
+                    margin-left: .5rem;
+                    a{
+                        min-width: 5rem;    
+                    } 
+                }
+            }
+            .arrange{
+                @include displayFlex( flex-start,center);
+                margin-right: 1rem
+            }
+            .show__product{
+                @include displayFlex( flex-start,center);
+              
+            }
+        }
+    }
+    .category__bottom{
+        margin-top: 2rem;
+        .category__pagination{
+            @include displayFlex(center,center);
+            .page-link{
+                font-size: $text-size-min;
+                color: rgba($color: #000000, $alpha: .8);
+            }
+        }
+    }
+    .category__middle{
+        width: 100%;
+    }
+}
