@@ -1,4 +1,5 @@
 include ../variables/variable_index.pug
+include ../variables/variable_cart.pug
 mixin footer(data)
     .footer__list
         h1= data[0]
@@ -144,4 +145,27 @@ mixin info_detail(title,content)
         .detail__content 
             each item in content 
                 p= item
+mixin cart(title,img,name,price)
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                each item in title
+                    <th scope="col">#{item}</th>
+            </tr>
+        </thead>
+        <tbody>
+            -for(let i= 0 ; i < img.length ; i++)
+                <tr>
+                    <th scope="row">#{i}</th>
+                    td.img_table 
+                        img(src= `./assets/img/${img[i]}`, alt="")
+                    td.name= name[i]
+                    td= price[i]
+                    td= i 
+                    td= price[i]*i
+                    td
+                        <i class="fas fa-trash-alt"></i>
+                </tr>
+        </tbody>
+    </table>
 
