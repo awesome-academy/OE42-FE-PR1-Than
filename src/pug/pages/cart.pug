@@ -1,0 +1,21 @@
+extends ../layouts/layout_home.pug
+block content
+    include ../variables/variable_index.pug
+        include ../variables/variable_cart.pug
+            include ../base/mixin.pug
+            .container
+                .row.cart
+                    .col-12.col-sm-12
+                        +cart(title_table,img_content_head,title_content_head,priceDecrease_content_head)
+                .row.cart 
+                    .col-6.col-sm-6
+                        -for(let i=0;i<title_payment.length;i++) 
+                            .detail__payment
+                                .detail__payment-first
+                                    h1= title_payment[i]
+                                .detail__payment-first
+                                    h1= number_payment[i]
+                .row.cart
+                    .payment
+                        button Hủy
+                        button Thanh toán
