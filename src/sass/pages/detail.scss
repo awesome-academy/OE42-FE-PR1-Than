@@ -1,0 +1,91 @@
+.content__detail{
+    margin: 4rem 0;
+}
+.detail__img{
+    img {
+        height: 80%;
+    }
+}
+.list__img {
+    margin-top: 1rem;
+    width: 100%;
+    height: 20%;
+    @include displayFlex (space-between,center);
+    .img__item{
+        width: 20%;
+        padding: .4rem;
+        img{
+            width: 100%;
+        }
+    }
+}
+.card__detail{
+    align-items: flex-start;
+    box-shadow: none;
+    border: none;
+}
+.price__detail{
+    @include displayFlex(flex-start,center);
+    h3{
+        margin-left: .6rem;
+        font-size: $text-size-min;
+        opacity: .6;
+        text-decoration-line: line-through;
+    }
+}
+.detail__quantity{
+    margin: 1.6rem 0;
+    @include displayFlex(flex-start,center);
+    .quantity__title{
+        margin-right: 1rem;
+        h1{
+            margin: 0;
+            font-size: $text-size-min;
+            opacity: .8;
+        }
+    }
+    .quantity__group{
+        @include displayFlex(space-between,center);
+        button {
+            margin-right: .4rem;
+            border: rgba($color: #000000, $alpha: .1);
+            width: 3rem;
+            height: 3rem;
+            &:nth-child(2){
+                width: 6rem;
+            }
+        }
+    }
+}
+.detail__product{
+     border: 1px solid rgba($color: #000000, $alpha: .1);
+     .detail__head{
+        border-bottom: 1px solid rgba($color: #000000, $alpha: .1);
+         ul {
+             padding: 0;
+             margin: 0;
+             li {
+                 list-style: none;
+                 padding: 1rem 3rem;
+                 display: inline-block;
+                 &:nth-child(1){
+                     border-bottom: 4px solid $color-main-green;
+                     background-color:rgba($color: $color-main-green, $alpha: .1)
+                 }
+                 a{
+                     text-decoration: none;
+                     color: #333;
+                     font-size: $text-size-min;
+                 }
+             }
+         }
+     }
+     .detail__content{
+         padding: 1rem 2rem;
+         opacity: .8;
+         p{
+             text-align: justify;
+             font-size: $text-size-min;
+         }
+     }
+}
