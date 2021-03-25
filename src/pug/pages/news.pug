@@ -1,0 +1,6 @@
+extends ../layouts/layout_news.pug
+block news
+    include ../variables/variable_index.pug
+    include ../variables/variable_news.pug
+    include ../base/mixin.pug
+    +news_content(title_category_news,img_content_head,description_news)

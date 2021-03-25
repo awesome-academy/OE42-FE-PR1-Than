@@ -1,0 +1,16 @@
+include ../variables/variable_news.pug
+    include ../variables/variable_index.pug
+        include ../base/mixin.pug
+        .container
+            .row.content__category
+                .col-0.col-sm-0.col-lg-3
+                    .category__left
+                        +category_news(img_content_bottom,title_category_news)
+                        +category_news_tags(news_tag)
+                .col-12.col-sm-12.col-md-9
+                    .category__right  
+                        .category__middle        
+                            block news 
+                        .category__bottom
+                            .category__pagination
+                                +pagination

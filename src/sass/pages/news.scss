@@ -1,0 +1,39 @@
+.news__item{
+    padding-left: 2rem;
+    width: 100%;
+    margin-bottom: 4rem;
+    h1{
+        margin-bottom: 1.4rem;
+        font-size: $text-size-normal;
+    }
+    &-time{
+        @include displayFlex(flex-start,center);
+        margin-bottom: 1.4rem;
+        .time_item{
+            margin-right: 1.6rem;
+            @include displayFlex(flex-start,center);
+            i{
+                color: $color-main-green;
+                font-size: $text-size-min;
+                margin-right: .4rem;
+            }
+            h3{
+                margin: 0;
+                opacity: .6;
+                font-size: $text-size-min;
+            }
+        }
+    }
+    .news__img{
+        margin-bottom: 1.4rem;
+        @include w-h(100%,20rem);
+        img{
+            @include w-h(100%,100%);
+        }
+    }
+    p{
+        font-size: $text-size-min;
+        opacity: .8;
+        text-align: justify;
+    }
+}
