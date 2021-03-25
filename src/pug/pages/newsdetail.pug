@@ -1,0 +1,21 @@
+extends ../layouts/layout_detail_news.pug
+block news
+    include ../variables/variable_index.pug
+    include ../variables/variable_news.pug
+    include ../base/mixin.pug
+    +news_detail_content(title_category_news[0],img_content_head[0],description_news)
+    +comment(comment_img,comment_name,comment_content,comment_time)
+    .comment__form 
+        h1 Viết bình luận 
+        .row.comment__form-info
+            each item in comment_form 
+                .col-4.col-sm-4
+                    .input__info 
+                        input(type="text" placeholder= item)
+        .row 
+            .col-12.col-sm-12 
+                .input__info.input__comment 
+                    input(type="text" placeholder="Bình luận")
+        .comment__submit 
+            button Xóa
+            button Bình luận

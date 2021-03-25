@@ -37,3 +37,89 @@
         text-align: justify;
     }
 }
+.comment {
+    width: 100%;
+    margin-top: 4rem;
+    h1{
+        font-size: $text-size-normal;
+        font-weight: bold;
+        color: rgba($color: #000000, $alpha: .6);
+        margin-bottom: 2rem;
+    }
+}
+.comment__item{
+    width: 100%;
+    @include displayFlex(flex-start,center);
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: .1);
+    &-img{
+        margin-right: 1rem;
+        width: 10%;
+        img{
+            @include w-h(100%,100%);
+            border-radius: 50%;
+        }
+    }
+    &-content{
+        width: 90%;
+        .comment__item-head{
+            @include displayFlex(space-between,center);
+            margin-bottom: 1rem;
+            h1{
+                font-size: $text-size-min;
+                margin: 0;
+            }
+            a{
+                color: rgba($color: #000000, $alpha: .6);
+                font-size: $text-size-min;
+            }
+        }
+        p {
+            font-size: $text-size-min;
+            text-align: justify;
+            opacity: .8;
+        }
+    }
+}
+.child{
+    width: 90%;
+    margin-left: auto;
+}
+.comment__form{
+    margin-top: 4rem;
+    h1{
+        font-size: $text-size-normal;
+        font-weight: bold;
+        color: rgba($color: #000000, $alpha: .6);
+        margin-bottom: 2rem;
+    }
+    &-info{
+        margin-bottom: 1rem;
+    }
+}
+.input__info{
+    border: 1px solid rgba($color: #000000, $alpha: .1);
+    @include w-h(100%,2.5rem);
+    input {
+        outline: none;
+        border: none;
+        width: 100%;
+        padding: 0 1rem;
+        line-height: 2.4rem;
+        color: rgba($color: #000000, $alpha: .6);
+    }
+}
+.input__comment{
+    height: 7rem;
+    input {
+        line-height: 6.9rem;
+    }
+}
+.comment__submit {
+    margin: 4rem 0;
+    @include displayFlex(center,center);
+    button{
+        @include button-2()
+    }
+}
