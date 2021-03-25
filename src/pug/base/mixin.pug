@@ -1,5 +1,6 @@
 include ../variables/variable_index.pug
 include ../variables/variable_cart.pug
+include ../variables/variable_news.pug
 mixin footer(data)
     .footer__list
         h1= data[0]
@@ -168,4 +169,29 @@ mixin cart(title,img,name,price)
                 </tr>
         </tbody>
     </table>
-
+mixin category_news(img,title)
+    h1.title__category Tin nổi bật
+    -for(let i=0;i< img.length;i++)
+        .category__color.category__news
+            .news__img 
+                img(src= `./assets/img/${img[i]}`, alt="")
+            h1.color__title.title__news= title[i]
+mixin category_news_tags(title)
+    h1.title__category Tags
+    .category__color.category__news
+        .row
+            -for(let i=0;i< title.length;i++)
+                .col-sm-6 
+                    h1.news__tag= title [i]
+mixin news_content(title,img,desc)
+    -for(let j=0;j<4;j++)
+        .news__item
+            h1= title[j]
+            .news__item-time
+                -for(let i=0;i<icon_news.length;i++) 
+                    .time_item 
+                        != icon_news[i]
+                        h3= time_news[i]
+            .news__img 
+                img(src= `./assets/img/${img[j]}`, alt="", srcset="")
+            p= desc
