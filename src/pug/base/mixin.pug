@@ -195,3 +195,49 @@ mixin news_content(title,img,desc)
             .news__img 
                 img(src= `./assets/img/${img[j]}`, alt="", srcset="")
             p= desc
+mixin news_detail_content(title,img,desc)
+    .news__item
+        h1= title
+        .news__item-time
+            -for(let i=0;i<icon_news.length;i++) 
+                .time_item 
+                    != icon_news[i]
+                    h3= time_news[i]
+        .news__img 
+            img(src= `./assets/img/${img}`, alt="", srcset="")
+        p= desc
+        p= desc
+        .news__img 
+            img(src= `./assets/img/${img}`, alt="", srcset="")
+        p= desc
+        p= desc
+        p= desc
+mixin comment(img,name,comment,time)
+    .comment
+        h1 Bình luận (9) 
+        -for(let i=0;i<3;i++)
+            .row
+                .col-12.col-sm-12 
+                    .comment__item
+                        .comment__item-img 
+                            img(src= `./assets/img/${img}`, alt="", srcset="")
+                        .comment__item-content 
+                            .comment__item-head 
+                                h1= name 
+                                a(href="") Trả lời  
+                            p= comment
+                            p= time
+                    -for(let j =0; j < 3 ; j ++)
+                        .comment__item.child 
+                            .comment__item-img 
+                                img(src= `./assets/img/${img}`, alt="", srcset="")
+                            .comment__item-content 
+                                .comment__item-head 
+                                    h1= name 
+                                    a(href="") Trả lời  
+                                p= comment
+                                p= time
+
+
+
+                            

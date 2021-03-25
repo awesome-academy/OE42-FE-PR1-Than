@@ -829,3 +829,92 @@ tbody tr {
     font-size: 1rem;
     opacity: .8;
     text-align: justify; }
+
+.comment {
+  width: 100%;
+  margin-top: 4rem; }
+  .comment h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 2rem; }
+
+.comment__item {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .comment__item-img {
+    margin-right: 1rem;
+    width: 10%; }
+    .comment__item-img img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; }
+  .comment__item-content {
+    width: 90%; }
+    .comment__item-content .comment__item-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem; }
+      .comment__item-content .comment__item-head h1 {
+        font-size: 1rem;
+        margin: 0; }
+      .comment__item-content .comment__item-head a {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 1rem; }
+    .comment__item-content p {
+      font-size: 1rem;
+      text-align: justify;
+      opacity: .8; }
+
+.child {
+  width: 90%;
+  margin-left: auto; }
+
+.comment__form {
+  margin-top: 4rem; }
+  .comment__form h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 2rem; }
+  .comment__form-info {
+    margin-bottom: 1rem; }
+
+.input__info {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 2.5rem; }
+  .input__info input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 0 1rem;
+    line-height: 2.4rem;
+    color: rgba(0, 0, 0, 0.6); }
+
+.input__comment {
+  height: 7rem; }
+  .input__comment input {
+    line-height: 6.9rem; }
+
+.comment__submit {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .comment__submit button {
+    border-radius: 25px;
+    background-color: #3aca3a;
+    color: #fff;
+    border: none;
+    padding: .4rem 1rem;
+    min-width: 6rem; }
+    .comment__submit button:nth-child(1) {
+      margin-right: 1rem;
+      background-color: rgba(0, 0, 0, 0.6); }
