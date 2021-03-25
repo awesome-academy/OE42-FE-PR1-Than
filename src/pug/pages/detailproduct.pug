@@ -1,0 +1,23 @@
+extends ../layouts/layout_home.pug
+block content
+    include ../variables/variable_index.pug
+            include ../variables/variable_detailproduct.pug
+                include ../base/mixin.pug
+                .container
+                    .row.content__detail
+                        .col-12.col-sm-12
+                            +card_detail(img_content_bottom,title_content_bottom[0],priceDecrease_content_bottom[0],price_content_bottom,description_detail_product)
+                    .row.content__detail
+                        .col-12.col-sm-12
+                            +info_detail(detail_product_title,detail_product_content)
+                    .row.content__detail
+                        .col-12.col-sm-12
+                            h1.title Sản phẩm liên quan
+                            .row   
+                                -for(let i = 0 ; i < img_content_bottom.length/2;i++)
+                                    .col-3.col-sm-3
+                                        +card_vertical(img_content_bottom[i],title_content_bottom[i],priceDecrease_content_bottom[i],price_content_bottom,'new')
+                            .row   
+                                -for(let i = img_content_bottom.length/2 ; i < img_content_bottom.length;i++)
+                                    .col-3.col-sm-3
+                                        +card_vertical(img_content_bottom[i],title_content_bottom[i],priceDecrease_content_bottom[i],price_content_bottom,'new')

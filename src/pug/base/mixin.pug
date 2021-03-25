@@ -104,3 +104,44 @@ mixin card_list(img,title,pricedecrease,desc)
                 button Mua ngay 
                 .cardlist__buy-icon 
                     !=icon_search 
+mixin card_detail(img,title,pricedecrease,price,desc)
+    .cardhor.cardlist.card__detail
+        .cardhor__img.cardlist__img.detail__img
+            img(src=`./assets/img/${img[0]}`, alt="Anh hoa", srcset="")
+            .list__img
+                -for(let i =1 ; i < 6 ;i++)
+                    .img__item
+                        img(src=`./assets/img/${img[i]}`, alt="", srcset="")
+        .cardhor__content.cardlist__content
+            h1= title 
+            .rating 
+                -for(let i=0;i<4;i++)
+                    !=icon_star 
+                !=icon_halfstar
+            .list__description
+                p= desc
+            .detail__quantity 
+                .quantity__title
+                    h1 Số lượng
+                .quantity__group 
+                    button -
+                    button 1
+                    button +
+            .price.price__detail
+                h2 #{pricedecrease}đ
+                h3 #{price}đ
+            .cardlist__buy 
+                button Mua ngay 
+                .cardlist__buy-icon 
+                    !=icon_search 
+mixin info_detail(title,content)
+    .detail__product 
+        .detail__head 
+            ul 
+                each item in title 
+                    li
+                        a(href="")= item 
+        .detail__content 
+            each item in content 
+                p= item
+
