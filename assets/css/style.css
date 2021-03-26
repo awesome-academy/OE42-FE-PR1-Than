@@ -918,3 +918,50 @@ tbody tr {
     .comment__submit button:nth-child(1) {
       margin-right: 1rem;
       background-color: rgba(0, 0, 0, 0.6); }
+
+.register {
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+  .register h1 {
+    margin-bottom: 2rem;
+    color: #3aca3a;
+    font-size: 1rem;
+    text-transform: uppercase; }
+  .register label {
+    margin-bottom: .4rem;
+    margin-right: .2rem; }
+    .register label span {
+      color: red; }
+  .register input {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: .4rem 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    color: rgba(0, 0, 0, 0.6); }
+
+.info__personal {
+  margin-bottom: 2rem; }
+
+.check__register {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .check__register input {
+    width: 2%;
+    margin: 0; }
+  .check__register p {
+    margin: 0; }
+
+.button__login {
+  margin-top: 1rem; }
+  .button__login button {
+    border-radius: 25px;
+    background-color: #3aca3a;
+    color: #fff;
+    border: none;
+    padding: .4rem 1rem;
+    min-width: 6rem; }
+    .button__login button:nth-child(1) {
+      margin-right: 1rem;
+      background-color: rgba(0, 0, 0, 0.6); }
