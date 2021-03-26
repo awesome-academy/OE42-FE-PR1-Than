@@ -1,0 +1,44 @@
+.register {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    h1{
+        margin-bottom: 2rem;
+        color: $color-main-green;
+        font-size: $text-size-min;
+        text-transform: uppercase;  
+    }
+    label{
+        margin-bottom: .4rem;
+        margin-right: .2rem;
+        span{
+            color: red;
+        }
+    }
+    input{
+        width: 100%;
+        border: 1px solid rgba($color: #000000, $alpha: .1);
+        padding: .4rem 1rem;
+        margin-bottom: 1rem;
+        outline: none;
+        color: rgba($color: #000000, $alpha: .6);
+    }
+}
+.info__personal{
+    margin-bottom: 2rem;
+}
+.check__register{
+    @include displayFlex(flex-start,center);
+    input {
+    width: 2%;
+    margin: 0;
+    }
+    p{
+        margin: 0;
+    }
+}
+.button__login{
+    margin-top: 1rem;
+    button{
+        @include button-2()
+    }
+}

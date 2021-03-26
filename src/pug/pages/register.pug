@@ -1,0 +1,26 @@
+extends ../layouts/layout_home.pug
+block content
+    include ../variables/variable_register.pug
+    include ../base/mixin.pug
+    .container.register
+        form(action="") 
+            .row.info__personal 
+                h1 thông tin cá nhân
+                -for(let i = 0 ; i < info_personal.length; i ++)
+                    .col-12.col-sm-12.col-md-5
+                        label(for=`infopersonal${i}`)= info_personal[i]
+                            span *
+                        input(type="text" id=`infopersonal${i}`) 
+                .check__register
+                    input(type="checkbox")
+                    p Đăng kí nhận thông tin qua email
+            .row.info__account 
+                h1 thông tin tài khoản
+                -for(let i = 0 ; i < info_account.length; i ++)
+                    .col-12.col-sm-12.col-md-5
+                        label(for=`infoaccount${i}`)= info_account[i]
+                            span *
+                        input(type="text" id=`infoaccount${i}`) 
+                .button__login 
+                    Button Quay lại
+                    Button(type="submit") Đăng kí
