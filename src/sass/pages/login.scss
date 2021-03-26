@@ -1,0 +1,24 @@
+.login {
+    button {
+        border-radius: 25px;
+        background-color: $color-main-green;
+        color: $color-text-white;
+        border: none;
+        padding: .4rem 1rem;
+        min-width: 6rem;
+        margin-top: 2rem;
+    }
+    p{
+        margin: 0;
+    }
+}
+.check__login{
+    p{
+        margin-left: .3rem;
+    }
+    a{
+        color: rgba($color: #000000, $alpha: .5);
+        margin-left: 2rem;
+
+    }
+}

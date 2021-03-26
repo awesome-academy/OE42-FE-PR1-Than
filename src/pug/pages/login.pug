@@ -1,0 +1,26 @@
+extends ../layouts/layout_home.pug
+block content
+    include ../variables/variable_login.pug
+    include ../base/mixin.pug
+    .container.register.login
+        .row 
+            .col-12.col-sm-12.col-md-6
+                form(action="").info__login 
+                    h1 Thông tin cá nhân
+                    label(for="emaillogin") Email
+                            span *
+                    input(type="text" id="emaillogin") 
+                    label(for="passlogin") Mật khẩu
+                            span *
+                    input(type="text" id="passlogin")
+                    .check__register.check__login
+                        input(type="checkbox")
+                        p Đăng kí nhận thông tin qua email  
+                        a(href="") Bạn quên mật khẩu
+                    button(type="submit") Đăng nhập  
+            .col-12.col-sm-12.col-md-6
+                h1 Bạn chưa có tài khoản?
+                p= desc_login
+                button  Đăng kí
+
+                    

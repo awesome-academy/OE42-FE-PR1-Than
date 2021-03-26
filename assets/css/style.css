@@ -965,3 +965,22 @@ tbody tr {
     .button__login button:nth-child(1) {
       margin-right: 1rem;
       background-color: rgba(0, 0, 0, 0.6); }
+
+.login button {
+  border-radius: 25px;
+  background-color: #3aca3a;
+  color: #fff;
+  border: none;
+  padding: .4rem 1rem;
+  min-width: 6rem;
+  margin-top: 2rem; }
+
+.login p {
+  margin: 0; }
+
+.check__login p {
+  margin-left: .3rem; }
+
+.check__login a {
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 2rem; }
