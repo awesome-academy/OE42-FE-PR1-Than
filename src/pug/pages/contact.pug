@@ -1,0 +1,26 @@
+extends ../layouts/layout_home.pug
+block content
+    include ../variables/variable_contact.pug
+    include ../base/mixin.pug
+    .contact
+        .contact__map 
+            img(src="./assets/img/map.png", alt="", srcset="")
+        .container.register.login
+            .row 
+                .col-12.col-sm-12.col-md-6
+                    form(action="").info__login 
+                        h1 Thông tin cá nhân
+                        -for(let i = 0 ; i < info_contact.length; i ++)
+                            label(for=`infopersonal${i}`)= info_contact[i]
+                                span *
+                            input(type="text" id=`infopersonal${i}`) 
+                .col-12.col-sm-12.col-md-6.content__contact
+                    h1 Green Shop
+                    h2 Món quà từ thiên nhiên
+                    p= desc_contact
+                    .contact 
+                        .contact__mobile
+                            <i class="fas fa-mobile-alt"></i>Điện thoại: (84-4) 66.558.868
+                        .contact__email 
+                            <i class="fas fa-envelope"></i>Email: info@dkt.com.vn
+                                    
