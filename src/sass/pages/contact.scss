@@ -4,11 +4,15 @@
 .contact {
     &__map {
         margin-top: 4rem;
-        @include w-h(100%,24rem);
+        width: 100%;
         img {
             width: 100%;
+            height: 100%;
         }
     }
+}
+.contact__content{
+    margin-top: 0;
 }
 .content__contact {
     h1{
@@ -20,7 +24,6 @@
         font-size: $text-size-normal;
         color: rgba($color: #000000, $alpha: .6);
         margin-bottom: 1rem;
-
     }
     p{
         color: rgba($color: #000000, $alpha: .6);

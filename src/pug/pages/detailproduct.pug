@@ -15,9 +15,9 @@ block content
                             h1.title Sản phẩm liên quan
                             .row   
                                 -for(let i = 0 ; i < img_content_bottom.length/2;i++)
-                                    .col-3.col-sm-3
+                                    .col-6.col-sm-6.col-md-4.col-lg-3
                                         +card_vertical(img_content_bottom[i],title_content_bottom[i],priceDecrease_content_bottom[i],price_content_bottom,'new')
                             .row   
                                 -for(let i = img_content_bottom.length/2 ; i < img_content_bottom.length;i++)
-                                    .col-3.col-sm-3
+                                    .col-6.col-sm-6.col-md-4.col-lg-3
                                         +card_vertical(img_content_bottom[i],title_content_bottom[i],priceDecrease_content_bottom[i],price_content_bottom,'new')

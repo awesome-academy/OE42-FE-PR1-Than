@@ -12,7 +12,8 @@ mixin footer(data)
 mixin card_vertical(img,title,pricedecrease,price,discount)
     .cardver
         .cardver__img
-            img(src=`/OE42-FE-PR1-Than/assets/img/${img}`, alt="Anh hoa", srcset="")
+            a(href="http://127.0.0.1:5500/OE42-FE-PR1-Than/detailproduct.html")
+                img(src=`/OE42-FE-PR1-Than/assets/img/${img}`, alt="Anh hoa", srcset="")
             if discount == 'new'
                 .product__new
                     h1 new 
@@ -35,7 +36,8 @@ mixin card_vertical(img,title,pricedecrease,price,discount)
 mixin card_hor(img,title,pricedecrease)
     .cardhor
         .cardhor__img
-            img(src=`/OE42-FE-PR1-Than/assets/img/${img}`, alt="Anh hoa", srcset="")
+            a(href="http://127.0.0.1:5500/OE42-FE-PR1-Than/detailproduct.html")
+                img(src=`/OE42-FE-PR1-Than/assets/img/${img}`, alt="Anh hoa", srcset="")
         .cardhor__content 
             h1= title 
             .rating 
@@ -47,7 +49,9 @@ mixin card_hor(img,title,pricedecrease)
 mixin card_news(img,title,desc)
     .cardnews
         .cardnews__img
-            img(src=`/OE42-FE-PR1-Than/assets/img/${img}`, alt="Anh hoa", srcset="")
+            a(href="http://127.0.0.1:5500/OE42-FE-PR1-Than/newsdetail.html")
+                img(src=`/OE42-FE-PR1-Than/assets/img/${img}`, alt="Anh hoa", srcset="")
+ 
         .cardnews__content 
             h4 Thứ 7,ngày 31 tháng 12 năm 2015
             h1= title 
@@ -91,7 +95,8 @@ mixin pagination
 mixin card_list(img,title,pricedecrease,desc)
     .cardhor.cardlist
         .cardhor__img.cardlist__img
-            img(src=`/OE42-FE-PR1-Than/assets/img/${img}`, alt="Anh hoa", srcset="")
+            a(href="http://127.0.0.1:5500/OE42-FE-PR1-Than/detailproduct.html")
+                img(src=`/OE42-FE-PR1-Than/assets/img/${img}`, alt="Anh hoa", srcset="")
         .cardhor__content.cardlist__content
             h1= title 
             .rating 
@@ -114,7 +119,7 @@ mixin card_detail(img,title,pricedecrease,price,desc)
                 -for(let i =1 ; i < 6 ;i++)
                     .img__item
                         img(src=`./assets/img/${img[i]}`, alt="", srcset="")
-        .cardhor__content.cardlist__content
+        .cardhor__content.cardlist__content.detail__content
             h1= title 
             .rating 
                 -for(let i=0;i<4;i++)
@@ -158,7 +163,7 @@ mixin cart(title,img,name,price)
             -for(let i= 0 ; i < img.length ; i++)
                 <tr>
                     <th scope="row">#{i}</th>
-                    td.img_table 
+                    td.img_table
                         img(src= `./assets/img/${img[i]}`, alt="")
                     td.name= name[i]
                     td= price[i]
@@ -193,7 +198,9 @@ mixin news_content(title,img,desc)
                         != icon_news[i]
                         h3= time_news[i]
             .news__img 
-                img(src= `./assets/img/${img[j]}`, alt="", srcset="")
+                a(href="http://127.0.0.1:5500/OE42-FE-PR1-Than/newsdetail.html")
+                    img(src= `./assets/img/${img[j]}`, alt="", srcset="")
+ 
             p= desc
 mixin news_detail_content(title,img,desc)
     .news__item
@@ -237,7 +244,3 @@ mixin comment(img,name,comment,time)
                                     a(href="") Trả lời  
                                 p= comment
                                 p= time
-
-
-
-                            
