@@ -984,3 +984,34 @@ tbody tr {
 .check__login a {
   color: rgba(0, 0, 0, 0.5);
   margin-left: 2rem; }
+
+#infopersonal3 {
+  height: 10rem; }
+
+.contact__map {
+  margin-top: 4rem;
+  width: 100%;
+  height: 24rem; }
+  .contact__map img {
+    width: 100%; }
+
+.content__contact h1 {
+  text-transform: none;
+  margin-bottom: .2rem;
+  font-size: 1.8rem; }
+
+.content__contact h2 {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 1rem; }
+
+.content__contact p {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: justify;
+  margin-bottom: 1rem; }
+
+.content__contact .contact__mobile, .content__contact .contact__email {
+  margin-bottom: .6rem; }
+  .content__contact .contact__mobile i, .content__contact .contact__email i {
+    color: #3aca3a;
+    margin-right: .4rem; }

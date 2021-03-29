@@ -1,0 +1,39 @@
+#infopersonal3{
+    height: 10rem;
+}
+.contact {
+    &__map {
+        margin-top: 4rem;
+        @include w-h(100%,24rem);
+        img {
+            width: 100%;
+        }
+    }
+}
+.content__contact {
+    h1{
+        text-transform: none;
+        margin-bottom: .2rem;
+        font-size: $text-size-big;
+    }
+    h2{
+        font-size: $text-size-normal;
+        color: rgba($color: #000000, $alpha: .6);
+        margin-bottom: 1rem;
+
+    }
+    p{
+        color: rgba($color: #000000, $alpha: .6);
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+    .contact {
+        &__mobile,&__email{
+            margin-bottom: .6rem;
+            i {
+                color: $color-main-green;
+                margin-right: .4rem;
+            }
+        }
+    }
+}
