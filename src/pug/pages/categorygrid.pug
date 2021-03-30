@@ -4,5 +4,5 @@ block category
         include ../base/mixin.pug
         .row 
             -for(let i = 0 ; i < img_content_bottom.length;i++)
-                .col-6.col-sm-4
+                .col-12.col-sm-12.col-md-4
                     +card_vertical(img_content_bottom[i],title_content_bottom[i],priceDecrease_content_bottom[i],price_content_bottom,'new')

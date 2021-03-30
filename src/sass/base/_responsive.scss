@@ -1,0 +1,146 @@
+@media only screen and ( max-width : 64rem ){
+    .header__top .header-info ul:nth-child(2){
+        display: none;
+    }
+    .header .header__center .header-greenshop .greenshop__left-title{
+        margin: 0;
+    }
+    .header .header__center .header-greenshop .greenshop__right{
+        display: none;
+    }
+    .header .header__bottom .bottom__menu-list{
+        display: none;
+    }
+    .header .header__center .header-greenshop{
+        justify-content: center;
+    }
+    .header .header__center .header-greenshop .greenshop__left{
+        margin: 0;
+    }
+    .popup{
+        width: 40rem;
+        left: calc(50% - 20rem);
+    }
+    .popup__right .footer__top-email{
+        width: 100%;
+    }
+    .header .header__bottom .bottom__menu{
+        justify-content: space-between;
+    }
+    .bottom__menu-tablet{
+        i{
+            display: block;
+        }
+    }
+    .footer__center{
+        display: block;
+    }
+    .footer__center .info__left{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .footer__center .info__right .footer__list{
+        margin-bottom: 1rem;
+    }
+    .row_tablet{
+        margin-bottom: 4rem;
+    }
+    .footer__top h1 {
+        display: none;
+    }
+    .category__right .category__filter .filter__right .arrange h1, .category__right .category__filter .filter__right .show__product h1{
+        display: none;
+    }
+    .news__item{
+        padding: 0;
+        margin-top: 2rem;
+    }
+    .input__info{
+        margin-bottom: 1rem;
+    }
+    .input__info input{
+        line-height: 2.3rem;
+    }
+    .comment__submit{
+        margin: 0;
+    }
+   
+    .header .header__bottom .bottom__menu-icon:hover  >.list__tablet{
+            display: block;      
+    }
+    .popup__right .popupcheck{
+        margin: 0;
+    }
+    
+}
+@media only screen and ( max-width:46.2rem ){
+    .header__top .header-info ul:nth-child(2),.header__top .header-info ul:nth-child(1){
+        display: none;
+    }
+    .header__top .header-info ul:nth-child(3){
+        margin: 0;
+    }
+    .header__top .header-info{
+        justify-content: center;
+    }
+    .header .header__center .header-greenshop .greenshop__left-img{
+        display: none;
+    }
+    .header .header__center .header-greenshop .greenshop__left{
+        text-align: center;
+    }
+    .col_mobile{
+        display: none;
+    }
+    .cardhor{
+        padding: .4rem 1rem;
+    }
+    .card__detail{
+        display: block;
+        padding-bottom: 4rem;
+        .detail__img{
+            @include w-h(100%,50%)
+        }
+        .detail__content{
+            width: 100%;
+        }
+    }
+    .detail__product .detail__head ul li{
+        &:nth-child(1){
+            width: 100%;
+            text-align: center;
+        }
+        &:nth-child(2),&:nth-child(3){
+            display: none;
+        }
+    }
+    .card__detail .detail__content{
+        margin: 0;
+        padding: 1rem 0;
+    }
+    .news__item-time .time_item{
+        margin-right: .2rem;
+    }
+    .comment__item{
+        margin-bottom: 0;
+    }
+    .login__mobile{
+        margin-bottom: 2rem;
+    }
+   
+    .table thead tr th{
+        font-size: .6rem;
+    }
+    .tbody tr th, tbody tr td{
+        line-height: 42px;
+    }  
+    .overlay{
+        display: none;
+    }
+    .popup{
+        display: none;
+    }
+    .footer__top-contact .contact__icon i {
+        margin-right: .6rem;
+    }
+}

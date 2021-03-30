@@ -32,7 +32,7 @@ block content
                                 +card_vertical(img_content_head[1],title_content_head[1],priceDecrease_content_head[1],price_content_head,'new')
                             .col-6.col-sm-6
                                 +card_vertical(img_content_head[2],title_content_head[2],priceDecrease_content_head[2],price_content_head,'new')
-                    .col-12.col-sm-12.col-lg-6
+                    .col-12.col-sm-12.col-lg-6.col_mobile
                         .row 
                             .col-6.col-sm-6
                                 +card_vertical(img_content_head[3],title_content_head[3],priceDecrease_content_head[3],price_content_head)
@@ -48,13 +48,13 @@ block content
                                 +card_hor(img_content_head[i],title_content_head[i],priceDecrease_content_head[i])
                     .col-12.col-sm-12.col-md-8
                         h1.title Sản phẩm khuyến mãi
-                        .row   
+                        .row.row_tablet
                             -for(let i = 0 ; i < img_content_head.length/2;i++)
-                                .col-4.col-sm-4
+                                .col-12.col-sm-12.col-md-4
                                     +card_vertical(img_content_head[i],title_content_head[i],priceDecrease_content_head[i],price_content_head,'new')
                         .row   
                             -for(let i = img_content_head.length/2 ; i < img_content_head.length;i++)
-                                .col-4.col-sm-4
+                                .col-12.col-sm-12.col-md-4
                                     +card_vertical(img_content_head[i],title_content_head[i],priceDecrease_content_head[i],price_content_head,'new')
             .content_home
                 .banner 
@@ -64,17 +64,17 @@ block content
                 .row
                     .col-12.col-sm-12
                         h1.title Sản phẩm mới
-                        .row   
+                        .row.row_tablet
                             -for(let i = 0 ; i < img_content_bottom.length/2;i++)
-                                .col-3.col-sm-3
+                                .col-12.col-sm-12.col-md-3
                                     +card_vertical(img_content_bottom[i],title_content_bottom[i],priceDecrease_content_bottom[i],price_content_bottom,'new')
                         .row   
                             -for(let i = img_content_bottom.length/2 ; i < img_content_bottom.length;i++)
-                                .col-3.col-sm-3
+                                .col-12.col-sm-12.col-md-3
                                     +card_vertical(img_content_bottom[i],title_content_bottom[i],priceDecrease_content_bottom[i],price_content_bottom,'new')
             .content_home
                 .row 
                     h1.title Tin mới
                     -for(let i = 0 ; i< img_news.length ; i ++)
-                        .col-4.col-sm-4
+                        .col-12.col-sm-12.col-md-4
                             +card_news(img_news[i],title_news[i],desc_news[i])

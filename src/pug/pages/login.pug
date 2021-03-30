@@ -4,7 +4,7 @@ block content
     include ../base/mixin.pug
     .container.register.login
         .row 
-            .col-12.col-sm-12.col-md-6
+            .col-12.col-sm-12.col-md-6.login__mobile
                 form(action="").info__login 
                     h1 Thông tin cá nhân
                     label(for="emaillogin") Email
@@ -21,6 +21,4 @@ block content
             .col-12.col-sm-12.col-md-6
                 h1 Bạn chưa có tài khoản?
                 p= desc_login
-                button  Đăng kí
-
-                    
+                button  Đăng kí                  

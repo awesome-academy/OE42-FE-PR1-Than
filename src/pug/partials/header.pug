@@ -11,10 +11,10 @@ include ../variables/variable_header.pug
                         a(href="")!=item                
             ul
                 li
-                    a(href="") 
-                        <i class="fas fa-user-edit" data-bs-target="popupmodal"></i>Đăng kí
+                    a(href="http://127.0.0.1:5500/OE42-FE-PR1-Than/register.html") 
+                        <i class="fas fa-user-edit"></i>Đăng kí
                 li
-                    a(href="")
+                    a(href="http://127.0.0.1:5500/OE42-FE-PR1-Than/login.html")
                         <i class="fas fa-user"></i>Đăng nhập
     .header__center
         .container.header-greenshop 
@@ -36,10 +36,18 @@ include ../variables/variable_header.pug
     .header__bottom
         .container.bottom__menu 
             .bottom__menu-icon 
-                a(href="") 
+                a
                     <i class="fas fa-bars"></i>
+                .bottom__menu-list.list__tablet
+                    ul
+                        -for(let i = 0 ; i <menu.length;i++) 
+                            li 
+                                a(href= link[i])= menu[i]
             .bottom__menu-list 
                 ul
-                    each item in menu 
-                        li 
-                            a(href="")= item 
+                    -for(let i = 0 ; i <menu.length;i++) 
+                         li 
+                            a(href= link[i])= menu[i] 
+            .bottom__menu-tablet 
+                <i class="fas fa-search"></i>
+                <i class="fas fa-cart-arrow-down"></i>
