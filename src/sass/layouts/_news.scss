@@ -13,8 +13,9 @@
     }
 }
 .news__tag{
-    border: 1px solid rgba($color: #000000, $alpha: .1);
-    margin: 0;
-    padding: .6rem 1.6rem;
-    font-size: $text-size-min;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: .2rem .6rem;
+    display: inline-block;
+    margin-right: .4rem;
+    margin-bottom: .6rem;
 }

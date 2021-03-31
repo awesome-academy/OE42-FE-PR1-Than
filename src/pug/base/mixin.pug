@@ -21,7 +21,8 @@ mixin card_vertical(img,title,pricedecrease,price,discount)
                 .product__discount 
                     h1 50%
             .cardver__buy 
-                button Mua ngay 
+                a(href="http://127.0.0.1:5500/OE42-FE-PR1-Than/cart.html") 
+                    button Mua ngay  
                 .cardver__buy-icon 
                     !=icon_search 
         .cardver__content 
@@ -67,10 +68,12 @@ mixin category(title)
                     = title[i] 
 mixin category_color(colortext,color)
     h1.title__category= colortext[0]
-    -for(let i=1;i<colortext.length;i++)
-        .category__color 
-            .color(style={background:color[i]})
-            h1.color__title= colortext[i]
+    .row
+        -for(let i=1;i<colortext.length;i++)
+            .col-6.col-sm-6 
+                .category__color 
+                    .color(style={background:color[i]})
+                    p.color__title= colortext[i]
 mixin category_filter(title,data)
     h1 Sắp xếp theo 
     <div class="dropdown">
@@ -108,9 +111,12 @@ mixin card_list(img,title,pricedecrease,desc)
             .price 
                 h2 #{pricedecrease}đ
             .cardlist__buy 
-                button Mua ngay 
+                a(href="http://127.0.0.1:5500/OE42-FE-PR1-Than/cart.html") 
+                    button Mua ngay  
                 .cardlist__buy-icon 
-                    !=icon_search 
+                    !=icon_search
+                .cardlist__buy-icon 
+                    !=icon_heart
 mixin card_detail(img,title,pricedecrease,price,desc)
     .cardhor.cardlist.card__detail
         .cardhor__img.cardlist__img.detail__img
@@ -125,6 +131,9 @@ mixin card_detail(img,title,pricedecrease,price,desc)
                 -for(let i=0;i<4;i++)
                     !=icon_star 
                 !=icon_halfstar
+            .price.price__detail
+                h2 #{pricedecrease}đ
+                h3 #{price}đ
             .list__description
                 p= desc
             .detail__quantity 
@@ -134,13 +143,13 @@ mixin card_detail(img,title,pricedecrease,price,desc)
                     button -
                     button 1
                     button +
-            .price.price__detail
-                h2 #{pricedecrease}đ
-                h3 #{price}đ
             .cardlist__buy 
-                button Mua ngay 
+                a(href="http://127.0.0.1:5500/OE42-FE-PR1-Than/cart.html") 
+                    button Mua ngay 
                 .cardlist__buy-icon 
                     !=icon_search 
+                .cardlist__buy-icon 
+                    !=icon_heart
 mixin info_detail(title,content)
     .detail__product 
         .detail__head 
@@ -162,7 +171,6 @@ mixin cart(title,img,name,price)
         <tbody>
             -for(let i= 0 ; i < img.length ; i++)
                 <tr>
-                    <th scope="row">#{i}</th>
                     td.img_table
                         img(src= `./assets/img/${img[i]}`, alt="")
                     td.name= name[i]
@@ -185,9 +193,9 @@ mixin category_news_tags(title)
     h1.title__category Tags
     .category__color.category__news
         .row
-            -for(let i=0;i< title.length;i++)
-                .col-sm-6 
-                    h1.news__tag= title [i]
+            .col-12.col-sm-12
+                -for(let i=0;i< title.length;i++)
+                    p.news__tag= title [i]
 mixin news_content(title,img,desc)
     -for(let j=0;j<4;j++)
         .news__item

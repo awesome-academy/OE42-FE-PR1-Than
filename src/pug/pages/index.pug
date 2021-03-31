@@ -27,18 +27,20 @@ block content
                     h1.title Sản phẩm nổi bật
                     .col-12.col-sm-12.col-lg-6
                         .row 
-                            +card_vertical(img_content_head[0],title_content_head[0],priceDecrease_content_head[0],price_content_head,'new')
-                            .col-6.col-sm-6
+                            .col-12.col-sm-12.mb-4
+                                +card_vertical(img_content_head[0],title_content_head[0],priceDecrease_content_head[0],price_content_head,'new')
+                            .col-6.col-sm-6.mb-4
                                 +card_vertical(img_content_head[1],title_content_head[1],priceDecrease_content_head[1],price_content_head,'new')
-                            .col-6.col-sm-6
+                            .col-6.col-sm-6.mb-4
                                 +card_vertical(img_content_head[2],title_content_head[2],priceDecrease_content_head[2],price_content_head,'new')
                     .col-12.col-sm-12.col-lg-6.col_mobile
                         .row 
-                            .col-6.col-sm-6
+                            .col-6.col-sm-6.mb-4
                                 +card_vertical(img_content_head[3],title_content_head[3],priceDecrease_content_head[3],price_content_head)
-                            .col-6.col-sm-6
+                            .col-6.col-sm-6.mb-4
                                 +card_vertical(img_content_head[4],title_content_head[4],priceDecrease_content_head[4],price_content_head,'new')
-                            +card_vertical(img_content_head[5],title_content_head[5],priceDecrease_content_head[5],price_content_head,'new')
+                            .col-12.col-sm-12.mb-4
+                                +card_vertical(img_content_head[5],title_content_head[5],priceDecrease_content_head[5],price_content_head,'new')
             .content_home
                 .row 
                     .col-0.col-sm-0.col-md-4
@@ -50,11 +52,11 @@ block content
                         h1.title Sản phẩm khuyến mãi
                         .row.row_tablet
                             -for(let i = 0 ; i < img_content_head.length/2;i++)
-                                .col-12.col-sm-12.col-md-4
+                                .col-12.col-sm-12.col-md-4.mb-4
                                     +card_vertical(img_content_head[i],title_content_head[i],priceDecrease_content_head[i],price_content_head,'new')
                         .row   
                             -for(let i = img_content_head.length/2 ; i < img_content_head.length;i++)
-                                .col-12.col-sm-12.col-md-4
+                                .col-12.col-sm-12.col-md-4.mb-4
                                     +card_vertical(img_content_head[i],title_content_head[i],priceDecrease_content_head[i],price_content_head,'new')
             .content_home
                 .banner 
@@ -66,11 +68,11 @@ block content
                         h1.title Sản phẩm mới
                         .row.row_tablet
                             -for(let i = 0 ; i < img_content_bottom.length/2;i++)
-                                .col-12.col-sm-12.col-md-3
+                                .col-12.col-sm-12.col-md-3.mb-4
                                     +card_vertical(img_content_bottom[i],title_content_bottom[i],priceDecrease_content_bottom[i],price_content_bottom,'new')
                         .row   
                             -for(let i = img_content_bottom.length/2 ; i < img_content_bottom.length;i++)
-                                .col-12.col-sm-12.col-md-3
+                                .col-12.col-sm-12.col-md-3.mb-4
                                     +card_vertical(img_content_bottom[i],title_content_bottom[i],priceDecrease_content_bottom[i],price_content_bottom,'new')
             .content_home
                 .row 

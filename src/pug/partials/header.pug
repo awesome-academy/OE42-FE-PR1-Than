@@ -31,8 +31,9 @@ include ../variables/variable_header.pug
                         input(type="text" placeholder="Tìm kiếm..." )
                         <i class="fas fa-search"></i>
                 .greenshop__cart 
-                    <i class="fas fa-cart-arrow-down"></i>
-                    h1 <span>0</span> Sản phẩm
+                    a(href="http://127.0.0.1:5500/OE42-FE-PR1-Than/cart.html")
+                        <i class="fas fa-cart-arrow-down"></i>
+                    h1 <span>0</span> Sản phẩm 
     .header__bottom
         .container.bottom__menu 
             .bottom__menu-icon 
@@ -50,4 +51,5 @@ include ../variables/variable_header.pug
                             a(href= link[i])= menu[i] 
             .bottom__menu-tablet 
                 <i class="fas fa-search"></i>
-                <i class="fas fa-cart-arrow-down"></i>
+                a(href="http://127.0.0.1:5500/OE42-FE-PR1-Than/cart.html")
+                    <i class="fas fa-cart-arrow-down"></i>

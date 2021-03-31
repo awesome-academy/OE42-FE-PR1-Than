@@ -2,15 +2,18 @@ extends ../layouts/layout_home.pug
 block content
     include ../variables/variable_register.pug
     include ../base/mixin.pug
+    .container 
+        h1.direct Home /
+            span Đăng kí
     .container.register
         form(action="") 
             .row.info__personal 
                 h1 thông tin cá nhân
                 -for(let i = 0 ; i < info_personal.length; i ++)
                     .col-12.col-sm-12.col-md-5
-                        label(for=`infopersonal${i}`)= info_personal[i]
+                        label(for="")= info_personal[i]
                             span *
-                        input(type="text" id=`infopersonal${i}`) 
+                        input(type="text" ) 
                 .check__register
                     input(type="checkbox")
                     p Đăng kí nhận thông tin qua email
