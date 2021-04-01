@@ -29,7 +29,11 @@
     }
     .bottom__menu-tablet{
         i{
-            display: block;
+            display: block;    
+        }
+        a{
+            color: #fff;
+            text-decoration: none;
         }
     }
     .footer__center{
@@ -71,7 +75,12 @@
     .popup__right .popupcheck{
         margin: 0;
     }
-    
+    .cardver__content .price{
+        display: block;
+        h2{
+            margin-right: 0;
+        }
+    }
 }
 @media only screen and ( max-width:46.2rem ){
     .header__top .header-info ul:nth-child(2),.header__top .header-info ul:nth-child(1){
@@ -142,5 +151,18 @@
     }
     .footer__top-contact .contact__icon i {
         margin-right: .6rem;
+    }
+    tbody{
+        tr{
+            td{
+              padding: .3rem .3rem!important;
+            }
+            .name{
+               font-size: .4rem;
+            }
+        }
+    }
+    .detail__product {
+        margin-top: 2rem;
     }
 }

@@ -47,9 +47,8 @@
                   <input type="text" placeholder="Tìm kiếm..."><i class="fas fa-search"></i>
                 </div>
               </div>
-              <div class="greenshop__cart">
-                 <i class="fas fa-cart-arrow-down"></i>
-                <h1><span>0</span> Sản phẩm</h1>
+              <div class="greenshop__cart"> <a href="http://127.0.0.1:5500/OE42-FE-PR1-Than/cart.html"><i class="fas fa-cart-arrow-down"></i></a>
+                <h1><span>0</span> Sản phẩm </h1>
               </div>
             </div>
           </div>
@@ -79,56 +78,51 @@
               </ul>
             </div>
             <div class="bottom__menu-tablet">
-               <i class="fas fa-search"></i>
-<i class="fas fa-cart-arrow-down"></i>
-            </div>
+               <i class="fas fa-search"></i><a href="http://127.0.0.1:5500/OE42-FE-PR1-Than/cart.html"><i class="fas fa-cart-arrow-down"></i></a></div>
           </div>
         </div>
       </header>
       <section class="content">
+        <div class="container"> 
+          <h1 class="direct">Home /<span>Gio hàng</span></h1>
+        </div>
         <div class="container">
           <div class="row cart">
             <div class="col-12 col-sm-12"><table class="table table-striped">
 <thead>
-<tr><th scope="col">stt</th><th scope="col">hình ảnh</th><th scope="col">tên sản phẩm</th><th scope="col">đơn giá</th><th scope="col">số lượng</th><th scope="col">thành tiền</th><th scope="col">xóa</th></tr>
+<tr><th scope="col">hình ảnh</th><th scope="col">tên sản phẩm</th><th scope="col">đơn giá</th><th scope="col">số lượng</th><th scope="col">thành tiền</th><th scope="col">xóa</th></tr>
 </thead>
 <tbody><tr>
-<th scope="row">0</th>
                       <td class="img_table"><img src="./assets/img/spx2-1.png" alt=""></td>
                       <td class="name">Cây chân chim</td>
                       <td>250.000</td>
                       <td>0</td>
                       <td>0</td>
                       <td><i class="fas fa-trash-alt"></i></td></tr><tr>
-<th scope="row">1</th>
                       <td class="img_table"><img src="./assets/img/spx2-2.png" alt=""></td>
                       <td class="name">Cây dạ lan</td>
                       <td>500.000</td>
                       <td>1</td>
                       <td>500</td>
                       <td><i class="fas fa-trash-alt"></i></td></tr><tr>
-<th scope="row">2</th>
                       <td class="img_table"><img src="./assets/img/spx2-3.png" alt=""></td>
                       <td class="name">Cây danh dự</td>
                       <td>850.000</td>
                       <td>2</td>
                       <td>1700</td>
                       <td><i class="fas fa-trash-alt"></i></td></tr><tr>
-<th scope="row">3</th>
                       <td class="img_table"><img src="./assets/img/spx2-4.png" alt=""></td>
                       <td class="name">Cây cọ ta</td>
                       <td>150.000d</td>
                       <td>3</td>
                       <td>NaN</td>
                       <td><i class="fas fa-trash-alt"></i></td></tr><tr>
-<th scope="row">4</th>
                       <td class="img_table"><img src="./assets/img/spx2-5.png" alt=""></td>
                       <td class="name">Cây dứa nhỏ</td>
                       <td>375.000</td>
                       <td>4</td>
                       <td>1500</td>
                       <td><i class="fas fa-trash-alt"></i></td></tr><tr>
-<th scope="row">5</th>
                       <td class="img_table"><img src="./assets/img/spx2-6.png" alt=""></td>
                       <td class="name">Cây đa búp đỏ</td>
                       <td>1.000.000</td>
@@ -138,7 +132,14 @@
 </table>
             </div>
           </div>
+          <div class="row cart">
+            <div class="payment">
+              <button>Hủy</button>
+              <button>Tiếp tục mua</button>
+            </div>
+          </div>
           <div class="row cart"> 
+            <div class="col-12 col-sm-12 col-lg-6"></div>
             <div class="col-12 col-sm-12 col-lg-6">
               <div class="detail__payment">
                 <div class="detail__payment-first">
@@ -168,7 +169,7 @@
           </div>
           <div class="row cart">
             <div class="payment">
-              <button>Hủy</button>
+              <button style="display:none;">Hủy</button>
               <button>Thanh toán</button>
             </div>
           </div>

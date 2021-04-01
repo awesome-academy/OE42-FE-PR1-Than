@@ -3,11 +3,19 @@ block content
     include ../variables/variable_index.pug
         include ../variables/variable_cart.pug
             include ../base/mixin.pug
+            .container 
+                h1.direct Home /
+                    span Gio hàng
             .container
                 .row.cart
                     .col-12.col-sm-12
                         +cart(title_table,img_content_head,title_content_head,priceDecrease_content_head)
+                .row.cart
+                    .payment
+                        button Hủy
+                        button Tiếp tục mua
                 .row.cart 
+                    .col-12.col-sm-12.col-lg-6
                     .col-12.col-sm-12.col-lg-6
                         -for(let i=0;i<title_payment.length;i++) 
                             .detail__payment
@@ -17,5 +25,5 @@ block content
                                     h1= number_payment[i]
                 .row.cart
                     .payment
-                        button Hủy
+                        button(style={display:'none'}) Hủy
                         button Thanh toán

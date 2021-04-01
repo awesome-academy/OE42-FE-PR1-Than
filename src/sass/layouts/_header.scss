@@ -101,12 +101,12 @@
                     @include displayFlex(space-between,center);
                     opacity: .7;
                     i{
-                        font-size: $text-size-big;
+                        font-size: $text-size-normal;
                         color: black;
                         margin-right: 1rem;
                     }
                     h1 {
-                        font-size: $text-size-normal;
+                        font-size: $text-size-min;
                         color: black;
                         margin: 0;
                     }

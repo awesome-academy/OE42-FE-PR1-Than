@@ -221,11 +221,11 @@ html {
           align-items: center;
           opacity: .7; }
           .header .header__center .header-greenshop .greenshop__right .greenshop__cart i {
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             color: black;
             margin-right: 1rem; }
           .header .header__center .header-greenshop .greenshop__right .greenshop__cart h1 {
-            font-size: 1.4rem;
+            font-size: 1rem;
             color: black;
             margin: 0; }
   .header .header__bottom {
@@ -312,15 +312,15 @@ html {
           opacity: .6;
           margin-right: .4rem; }
   .category__left .category__color {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: flex-start;
     align-items: center; }
     .category__left .category__color .color {
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 2rem;
+      height: 2rem;
       border-radius: 50%;
-      margin-right: 1rem; }
+      margin-right: .6rem; }
     .category__left .category__color .color__title {
       color: rgba(0, 0, 0, 0.6);
       font-size: 1rem;
@@ -380,6 +380,9 @@ html {
   .category__right .category__middle {
     width: 100%; }
 
+.page-item:nth-child(2) a {
+  background-color: #3aca3a; }
+
 .content {
   margin-bottom: 4rem; }
 
@@ -401,8 +404,8 @@ html {
 
 .cardver {
   width: 100%;
-  height: 100%;
-  padding-bottom: 2rem; }
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  margin-bottom: 1rem; }
   .cardver__img {
     width: 100%;
     height: 60%;
@@ -485,9 +488,10 @@ html {
         text-decoration-line: line-through; }
 
 .cardhor {
-  padding: .4rem 0;
+  padding: 1rem 1rem;
   width: 100%;
   height: 100%;
+  border: 1px solid rgba(51, 51, 51, 0.2);
   display: flex;
   justify-content: flex-start;
   align-items: center; }
@@ -617,6 +621,15 @@ html {
 #popup:checked ~ .popup {
   display: none; }
 
+.direct {
+  font-size: .8rem;
+  color: rgba(51, 51, 51, 0.6);
+  margin-top: 1rem;
+  margin-bottom: 0; }
+  .direct span {
+    color: #3aca3a;
+    margin-left: .3rem; }
+
 .category__list {
   margin-bottom: 2rem; }
 
@@ -633,26 +646,27 @@ html {
       font-size: 1rem; }
     .cardlist__content .cardlist__buy {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
-      width: 10rem;
       margin-top: 1rem; }
       .cardlist__content .cardlist__buy button {
         border-radius: 25px;
         background-color: #3aca3a;
         color: #fff;
         border: none;
-        padding: .4rem 1rem; }
+        padding: .4rem 1rem;
+        margin-right: 2rem; }
       .cardlist__content .cardlist__buy .cardlist__buy-icon {
         width: 2rem;
         height: 2rem;
+        margin-right: 1rem;
         border-radius: 50%;
-        background-color: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(0, 0, 0, 0.6);
         display: flex;
         justify-content: center;
         align-items: center; }
         .cardlist__content .cardlist__buy .cardlist__buy-icon icon {
-          color: black;
+          border: 1px solid rgba(0, 0, 0, 0.6);
           font-size: 1rem; }
 
 .content__detail {
@@ -774,9 +788,10 @@ tbody tr {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border: 1px solid rgba(58, 202, 58, 0.6); }
-  .detail__payment-first:nth-child(1) {
-    background-color: rgba(58, 202, 58, 0.8);
+  border: 1px solid rgba(51, 51, 51, 0.1); }
+  .detail__payment:nth-child(3) {
+    background-color: rgba(58, 202, 58, 0.8); }
+  .detail__payment-first :nth-child(1) {
     border-right: 1px solid rgba(0, 0, 0, 0.1); }
   .detail__payment-first {
     width: 50%; }
@@ -788,7 +803,7 @@ tbody tr {
 
 .payment {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center; }
   .payment button {
     border-radius: 25px;
@@ -799,7 +814,9 @@ tbody tr {
     min-width: 6rem; }
     .payment button:nth-child(1) {
       margin-right: 1rem;
-      background-color: rgba(0, 0, 0, 0.6); }
+      background-color: #fff;
+      color: black;
+      border: 1px solid rgba(0, 0, 0, 0.6); }
 
 .category__news .news__img {
   margin-right: .4rem;
@@ -816,9 +833,10 @@ tbody tr {
 
 .news__tag {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 0;
-  padding: .6rem 1.6rem;
-  font-size: 1rem; }
+  padding: .2rem .6rem;
+  display: inline-block;
+  margin-right: .4rem;
+  margin-bottom: .6rem; }
 
 .news__item {
   padding-left: 2rem;
@@ -944,7 +962,9 @@ tbody tr {
     min-width: 6rem; }
     .comment__submit button:nth-child(1) {
       margin-right: 1rem;
-      background-color: rgba(0, 0, 0, 0.6); }
+      background-color: #fff;
+      color: black;
+      border: 1px solid rgba(0, 0, 0, 0.6); }
 
 .register {
   margin-top: 4rem;
@@ -991,7 +1011,9 @@ tbody tr {
     min-width: 6rem; }
     .button__login button:nth-child(1) {
       margin-right: 1rem;
-      background-color: rgba(0, 0, 0, 0.6); }
+      background-color: #fff;
+      color: black;
+      border: 1px solid rgba(0, 0, 0, 0.6); }
 
 .login button {
   border-radius: 25px;
@@ -1068,6 +1090,9 @@ tbody tr {
     justify-content: space-between; }
   .bottom__menu-tablet i {
     display: block; }
+  .bottom__menu-tablet a {
+    color: #fff;
+    text-decoration: none; }
   .footer__center {
     display: block; }
   .footer__center .info__left {
@@ -1093,9 +1118,12 @@ tbody tr {
   .header .header__bottom .bottom__menu-icon:hover > .list__tablet {
     display: block; }
   .popup__right .popupcheck {
-    margin: 0; } }
+    margin: 0; }
+  .cardver__content .price {
+    display: block; }
+    .cardver__content .price h2 {
+      margin-right: 0; } }
 
-/* Mobile */
 @media only screen and (max-width: 46.2rem) {
   .header__top .header-info ul:nth-child(2), .header__top .header-info ul:nth-child(1) {
     display: none; }
@@ -1142,4 +1170,10 @@ tbody tr {
   .popup {
     display: none; }
   .footer__top-contact .contact__icon i {
-    margin-right: .6rem; } }
+    margin-right: .6rem; }
+  tbody tr td {
+    padding: 0.3rem 0.3rem !important; }
+  tbody tr .name {
+    font-size: .4rem; }
+  .detail__product {
+    margin-top: 2rem; } }
